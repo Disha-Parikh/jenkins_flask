@@ -1,9 +1,9 @@
 pipeline {
-  agent any
+  agent { docker { image 'python:3.5'} }
   stages {
     stage('build') {
       steps {
-             echo 'Testing Jenkinsfile'
+             sh 'python /Example/app.py'
             }
         }
     }
