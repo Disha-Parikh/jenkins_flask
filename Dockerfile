@@ -5,9 +5,7 @@ RUN apt-get install -y python3-dev python3-pip
 RUN apt-get install -y libffi6
 RUN apt-get install -y libffi-dev
 RUN apt-get install -y build-essential
-RUN pip3 install flask
-RUN pip3 install flask_sqlalchemy
-RUN pip3 install psycopg2-binary
+RUN pip install -r requirements.txt
 WORKDIR .
 COPY . .
 EXPOSE 5000
