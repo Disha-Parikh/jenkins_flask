@@ -1,8 +1,9 @@
 pipeline {
-    stages {
-        stage('build') {
-            steps {
-                echo 'Testing Jenkinsfile'
+  agent { docker { image 'python:3.7.2' } }
+  stages {
+    stage('build') {
+      steps {
+             echo 'Testing Jenkinsfile'
             }
         }
     }
