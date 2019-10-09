@@ -12,4 +12,4 @@ class User(db.Model):
 	user_email = db.Column(db.String(255))
 	status = db.Column(db.String(255))
 	def __repr__(self):
-		return f"User('{self.id}','{self.user_name}', '{self.user_email}', '{self.status}')"
+		return "fUser('{self.id}','{self.user_name}', '{self.user_email}', '{self.status}')"
