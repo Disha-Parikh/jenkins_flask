@@ -2,6 +2,7 @@ import os
 import sys
 from sqlalchemy.exc import SQLAlchemyError
 sys.path.append(os.getcwd() + '/..')
+from Example import app1
 from Example.app import db
 
 class User(db.Model):
