@@ -1,7 +1,8 @@
 import os
 import sys
 from sqlalchemy.exc import SQLAlchemyError
-sys.path.append(os.getcwd() + '/..')
+#sys.path.append(os.getcwd() + '/..')
+from testing import test 
 from Example import app1
 from Example.app import db
 
